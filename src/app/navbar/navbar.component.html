@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand"></a>
+    <img src="../../assets/IMG_0033.jpg" alt="logo" />
     <button
       class="navbar-toggler"
       type="button"
@@ -57,10 +57,10 @@
           >
         </li>
       </ul>
-      <h5 *ngIf="utente" class="ms-3">Ciao {{ utente.user.nome }}!</h5>
+      <h4 *ngIf="utente" class="ms-3">Ciao {{ utente.user.nome }}!</h4>
       <button
         type="button"
-        class="btn btn-dark ms-auto"
+        class="btn ms-auto"
         *ngIf="utente"
         (click)="logout()"
       >

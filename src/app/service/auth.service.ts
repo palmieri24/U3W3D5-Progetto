@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router';
 import { BehaviorSubject, throwError, tap, catchError } from 'rxjs';
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { UserProfile } from '../models/user-profile';
 
 @Injectable({
   providedIn: 'root',
@@ -66,6 +67,15 @@ export class AuthService {
     if (user) {
       const userData: AuthData = JSON.parse(user);
       return userData.user.id;
+    }
+    return null;
+  }
+
+  getUserInfo(userId: number): UserProfile | null {
+    const user = localStorage.getItem('user');
+    if (user) {
+      const userInfo: UserProfile = JSON.parse(user).user;
+      return userInfo;
     }
     return null;
   }

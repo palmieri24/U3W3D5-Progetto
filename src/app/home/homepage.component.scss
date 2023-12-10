@@ -1,0 +1,15 @@
+h4 {
+  color: #ff5959;
+}
+.card {
+  border: none;
+  box-shadow: 7px 8px 10px 0px #00000069;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 2px -2px 10px 0px #ff5959;
+  transition: transform 0.3s ease;
+}
+img {
+  object-fit: cover;
+}

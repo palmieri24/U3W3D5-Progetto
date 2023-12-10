@@ -10,18 +10,28 @@
         <div class="card-body">
           <h5 class="card-title text-truncate">{{ movie.title }}</h5>
           <p class="card-text"></p>
-          <button class="btn"><i class="bi bi-suit-heart"></i></button>
+          <button
+            class="btn add-fav-btn"
+            [ngClass]="{
+              'd-none': isFavourites(movie.id),
+              'd-block': !isFavourites(movie.id)
+            }"
+            (click)="addFavourites(movie)"
+          >
+            <i class="bi bi-suit-heart"></i>
+          </button>
+          <button
+            class="btn delete-fav-btn"
+            [ngClass]="{
+              'd-none': !isFavourites(movie.id),
+              'd-block': isFavourites(movie.id)
+            }"
+            (click)="deleteFavourites(movie)"
+          >
+            <i class="bi bi-suit-heart"></i>
+          </button>
         </div>
       </div>
-      <!--<a
-          class="position-absolute bottom-0 ms-1 fs-3"
-          (click)="addoRem(movie.id)"
-          [ngStyle]="{ color: isFavorite(movie.id) ? 'red' : 'white' }"
-          ><i class="fas fa-heart"></i
-        ></a>
-      </div>
-    </div>
-  </div>-->
     </div>
   </div>
 </div>
