@@ -6,6 +6,7 @@ import { AuthService } from '../service/auth.service';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { UserProfile } from '../models/user-profile';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movies',
@@ -22,7 +23,8 @@ export class MoviesComponent implements OnInit {
   constructor(
     private movieSrv: MovieService,
     private authSrv: AuthService,
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router
   ) {}
 
   ngOnInit(): void {

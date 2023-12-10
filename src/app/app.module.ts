@@ -40,6 +40,7 @@ const routes: Routes = [
     component: MoviesComponent,
     canActivate: [AuthGuard],
   },
+
   {
     path: '404',
     component: Error404Component,

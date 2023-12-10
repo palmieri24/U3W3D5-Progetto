@@ -20,6 +20,13 @@
       "nome": "alice",
       "cognome": "brunelli",
       "id": 4
+    },
+    {
+      "email": "ale@ale.com",
+      "password": "$2a$10$NacSuAN4Zk3HjbVjOElpC.Jdk542Rq8lo9/mIzBJpUiS6TO6pIJxu",
+      "nome": "Alessia",
+      "cognome": "Palmieri",
+      "id": 5
     }
   ],
   "favorites": [
@@ -52,6 +59,26 @@
       "movieId": 460465,
       "userId": 4,
       "id": 13
+    },
+    {
+      "movieId": 813258,
+      "userId": 5,
+      "id": 14
+    },
+    {
+      "movieId": 503736,
+      "userId": 5,
+      "id": 15
+    },
+    {
+      "movieId": 527774,
+      "userId": 5,
+      "id": 16
+    },
+    {
+      "movieId": 811367,
+      "userId": 5,
+      "id": 17
     }
   ],
   "movies-popular": [
